@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       .container {
+        border: 4px solid brown;
+       } 
+       .box {
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid orange ;
+            margin: 10px;
+       }
+       .container-two {
+        display: flex;
+        justify-content: center;
+       }
+       .wrap {
+           margin-top: 30px;
+           max-width: 640px;
+           border: 4px solid purple;
+       }
+       .content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+       }
+       .btn {
+        cursor: pointer;
+        border-radius: 100px;
+       }
+    </style>
+</head>
+<body>
+    <!-- Please explain about what is CSS boxing model and the layout components that it consists of. -->
+
+    <!-- CSS 盒模型是 CSS 中的一個基本概念，描述了元素在網頁上如何被大小和定位。它由四個主要組成部分組成：內容 (Content)、內邊距 (Padding)、邊框 (Border)、外邊距 (Margin) -->
+       <div class="container">
+            <div class="box">
+              <p>如何應用CSS 盒模型</p>
+            </div>
+    </div> 
+    
+    <!-- CSS 布局組件 包含:塊級元素 (Block-level elements)、內聯元素 (Inline elements)、內聯塊元素 (Inline-block elements)、彈性盒 (Flexbox)、網格 (Grid) -->
+        <div class="container-two">
+            <div class="wrap">
+                    <div class="content" >
+                        <p>舉例示範常用的彈性效果</p>
+                        <button class="btn">按我</button>
+                    </div>
+            </div>
+        </div>
+</body>
+</html>

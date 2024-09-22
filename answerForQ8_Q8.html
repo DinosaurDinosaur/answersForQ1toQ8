@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html {
+            font-size: 15px;
+            color: brown;
+            text-align: center;
+        }
+        body {
+            width: 100%;
+        }
+        /* 實踐RWD效果 於iPhone 12 Pro 、iPhone 14 Pro Max 、iPad Mini 、iPad Pro、等等 */
+        @media (max-width: 398px) {
+                html {
+                    font-size: 2.3vw;
+                }
+         }
+         @media (max-width: 430px) {
+                html {
+                    font-size: 2.4vw;
+                }
+         }
+        .container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            border: 2px solid black;
+            width: 34rem;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .header {
+            margin: 10px;
+            margin-top: 10px;
+            border: 2px solid black;
+            width: 32rem;
+            height: 6rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo {
+            padding-left: 5px;
+            margin-bottom: 10px;
+            width: 13rem;
+            height: 3.5rem;
+            border: 2px solid black;
+            align-self: flex-end;
+            text-align: left;
+            line-height: 2em;
+        }
+        .menu {
+            text-align: center;
+            margin-bottom: 10px;
+            width: 13rem;
+            height: 2.5rem;
+            border: 2px solid black;
+            align-self: flex-end;
+            line-height: 2em;
+        }
+        .body {
+            margin: 10px;
+            width: 32rem;
+            height: 18rem;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .body-left {
+            margin: 10px;
+            width: 30rem;
+            border:2px solid black;
+            display: grid;
+            align-items: center;
+        }
+        .body-right {
+            margin: 10px;
+            width: 30rem;
+            border:2px solid black;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .up {
+            margin:10px;
+            height:6rem;
+            border:2px solid black;
+            margin-bottom:6px;
+            display: grid;
+            align-items: center;
+        }
+        .down {
+            margin:10px;
+            height:6rem;
+            border:2px solid black;
+        }
+        .footer {
+            margin:10px;
+            border:2px solid black;
+            width: 32rem;
+            height: 3rem;
+            line-height: 1.5em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+                <div class="header">
+                    <div class="logo">Logo</div>
+                    <div class="menu">Menu</div>
+                </div>
+        <div class="body">
+            <div class="body-left">Item Photos <br>slide</div>
+            <div class="body-right">
+                <div class="up">Item detail</div>
+                <div class="down">Item desc list<br>-Desc1<br>-Desc2<br>-Desc3<br>.........etc.</div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+       </div>   
+    </div>
+</body>
+</html>
